@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warren.StudyCource.CustomerService.API", "Warren.StudyCource.CustomerService.API\Warren.StudyCource.CustomerService.API.csproj", "{3A90259C-A37A-46EA-A5FC-E54471C686BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warren.StudyCource.CustomerService.API", "StudySample\Warren.StudyCource.CustomerService.API\Warren.StudyCource.CustomerService.API.csproj", "{3A90259C-A37A-46EA-A5FC-E54471C686BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ABP VNext", "ABP VNext", "{14888D94-38B9-448C-B216-C25054EF4118}"
 EndProject
@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopSample.Customer.Applica
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopSample.Customer.Domain", "ShopSample\ShopSample.Customer.Domain\ShopSample.Customer.Domain.csproj", "{4457B81B-2647-40CB-AC01-13FA4C7762C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopSample.Customer.Api", "ShopSample\ShopSample.Customer.Api\ShopSample.Customer.Api.csproj", "{E1335360-76BD-4449-B715-E8A952124320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopSample.Customer.Api", "ShopSample\ShopSample.Customer.Api\ShopSample.Customer.Api.csproj", "{E1335360-76BD-4449-B715-E8A952124320}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopSample.Customer.EntityFrameworkCore", "ShopSample\ShopSample.Customer.EntityFrameworkCore\ShopSample.Customer.EntityFrameworkCore.csproj", "{920A86C7-A7E3-4BD1-9211-C0BA23184E3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopSample.Customer.Migrator", "ShopSample\ShopSample.Customer.Migrator\ShopSample.Customer.Migrator.csproj", "{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{3E332B97-E84F-442B-B509-9A89364388D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,15 +47,26 @@ Global
 		{E1335360-76BD-4449-B715-E8A952124320}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1335360-76BD-4449-B715-E8A952124320}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1335360-76BD-4449-B715-E8A952124320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{920A86C7-A7E3-4BD1-9211-C0BA23184E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{920A86C7-A7E3-4BD1-9211-C0BA23184E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{920A86C7-A7E3-4BD1-9211-C0BA23184E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{920A86C7-A7E3-4BD1-9211-C0BA23184E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{3A90259C-A37A-46EA-A5FC-E54471C686BE} = {3E332B97-E84F-442B-B509-9A89364388D7}
 		{B2576375-0CF9-4893-806A-5618E9AB5FE8} = {14888D94-38B9-448C-B216-C25054EF4118}
 		{6C0A3991-E498-451F-951A-C690E49C5F90} = {14888D94-38B9-448C-B216-C25054EF4118}
 		{4457B81B-2647-40CB-AC01-13FA4C7762C1} = {14888D94-38B9-448C-B216-C25054EF4118}
 		{E1335360-76BD-4449-B715-E8A952124320} = {14888D94-38B9-448C-B216-C25054EF4118}
+		{920A86C7-A7E3-4BD1-9211-C0BA23184E3B} = {14888D94-38B9-448C-B216-C25054EF4118}
+		{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367} = {14888D94-38B9-448C-B216-C25054EF4118}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14816249-A836-4BDB-81AB-492D9E313E42}

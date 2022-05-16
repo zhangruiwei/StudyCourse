@@ -6,13 +6,16 @@ using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 using Microsoft.OpenApi.Models;
+using ShopSample.Customer.EntityFrameworkCore;
+using ShopSample.Customer.Application.Service;
 
 namespace ShopSample.Customer.Api
 {
     [DependsOn(
         typeof(AbpAspNetCoreMvcModule),
         typeof(CustomerApplicationModule),
-        typeof(AbpAutofacModule)
+        typeof(AbpAutofacModule),
+        typeof(CustomerEntityFrameworkCoreModule)
         )]
     public class CustomerApiModule : AbpModule
     {
