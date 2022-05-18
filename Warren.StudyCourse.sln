@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopSample.Customer.Migrato
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{3E332B97-E84F-442B-B509-9A89364388D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopSample.Customer.EntityFramework.Migration", "ShopSample\ShopSample.Customer.EntityFramework.Migration\ShopSample.Customer.EntityFramework.Migration.csproj", "{605A08F4-E408-48C1-9E01-F2DC0320857F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605A08F4-E408-48C1-9E01-F2DC0320857F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605A08F4-E408-48C1-9E01-F2DC0320857F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605A08F4-E408-48C1-9E01-F2DC0320857F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605A08F4-E408-48C1-9E01-F2DC0320857F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{E1335360-76BD-4449-B715-E8A952124320} = {14888D94-38B9-448C-B216-C25054EF4118}
 		{920A86C7-A7E3-4BD1-9211-C0BA23184E3B} = {14888D94-38B9-448C-B216-C25054EF4118}
 		{C64F1778-85AF-4B5C-8D39-C4D0DF9E4367} = {14888D94-38B9-448C-B216-C25054EF4118}
+		{605A08F4-E408-48C1-9E01-F2DC0320857F} = {14888D94-38B9-448C-B216-C25054EF4118}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14816249-A836-4BDB-81AB-492D9E313E42}

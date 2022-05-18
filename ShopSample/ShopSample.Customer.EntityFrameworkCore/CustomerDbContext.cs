@@ -9,7 +9,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace ShopSample.Customer.EntityFrameworkCore
 {
-    [ConnectionStringName("CustomerConnectString")]
+    [ConnectionStringName("Default")]
     public class CustomerDbContext : AbpDbContext<CustomerDbContext>
     {
         public CustomerDbContext(DbContextOptions<CustomerDbContext> options) : base(options)
