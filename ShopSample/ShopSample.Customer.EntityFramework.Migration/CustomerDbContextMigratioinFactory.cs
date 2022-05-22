@@ -22,7 +22,7 @@ namespace ShopSample.Customer.EntityFramework.Migration
         {
             var build = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings,json", optional: false);
+                .AddJsonFile("appsettings.json", optional: false);
 
             return build.Build();
         }

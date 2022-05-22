@@ -9,14 +9,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.3.1" />
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="5.2.1" />
-    <PackageReference Include="Volo.Abp.Autofac" Version="5.2.1" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="5.2.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ShopSample.Customer.Application\ShopSample.Customer.Application.csproj" />
+    <ProjectReference Include="..\ShopSample.Customer.EntityFramework.Migration\ShopSample.Customer.EntityFramework.Migration.csproj" />
     <ProjectReference Include="..\ShopSample.Customer.EntityFrameworkCore\ShopSample.Customer.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
