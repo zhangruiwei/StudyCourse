@@ -15,6 +15,12 @@ namespace ShopSample.Customer.EntityFrameworkCore
                 c.ToTable("Customer");
                 c.ConfigureByConvention();
             });
+
+            builder.Entity<Domain.Entity.Wallet>(c =>
+            {
+                c.ToTable("Wallet");
+                c.ConfigureByConvention();
+            });
         }
     }
 }

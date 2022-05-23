@@ -5,6 +5,8 @@ namespace ShopSample.Customer.Application.Contracts.IService
 {
     public interface ICustomerService : IApplicationService
     {
+
+        Task<CustomerDto> CreateCustomer(CustomerDto dto);
         Task<List<CustomerDto>> GetListAsync();
     }
 }

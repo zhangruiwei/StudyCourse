@@ -13,7 +13,12 @@ namespace ShopSample.Customer.EntityFramework.Migration
             var connectionString = configuration.GetConnectionString("Default");
 
             var build = new DbContextOptionsBuilder<CustomerDbMigratioinContext>()
-                .UseMySql(ServerVersion.AutoDetect(connectionString));
+
+                .UseMySql(configuration.GetConnectionString("Default"), ServerVersion.AutoDetect(connectionString));
+
+            //.UseMySql(configuration.GetConnectionString("Default"), ServerVersion.Parse("8.0.27"));
+
+            //.UseMySql(configuration.GetConnectionString("Default"), MySqlServerVersion.LatestSupportedServerVersion);
 
             return new CustomerDbMigratioinContext(build.Options);
         }

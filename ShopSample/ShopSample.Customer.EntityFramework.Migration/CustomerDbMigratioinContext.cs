@@ -8,8 +8,7 @@ namespace ShopSample.Customer.EntityFramework.Migration
     [ConnectionStringName("Default")]
     public class CustomerDbMigratioinContext : AbpDbContext<CustomerDbMigratioinContext>
     {
-        public CustomerDbMigratioinContext(DbContextOptions<CustomerDbMigratioinContext> options)
-            : base(options)
+        public CustomerDbMigratioinContext(DbContextOptions<CustomerDbMigratioinContext> options) : base(options)
         {
 
         }

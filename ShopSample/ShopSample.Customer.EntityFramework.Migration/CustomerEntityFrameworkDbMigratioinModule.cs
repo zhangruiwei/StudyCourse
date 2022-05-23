@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using ShopSample.Customer.Domain.Data;
 using ShopSample.Customer.EntityFrameworkCore;
 using Volo.Abp.Modularity;
 

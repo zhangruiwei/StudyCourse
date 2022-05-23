@@ -2,7 +2,7 @@
 
 namespace ShopSample.Customer.Domain.Entity
 {
-    public class Wallet : Entity<Guid>
+    public class Wallet : Entity<long>
     {
         public string Name { get; set; }
         public decimal Money { get; set; }
