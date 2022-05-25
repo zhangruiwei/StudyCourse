@@ -23,11 +23,23 @@ namespace ShopSample.Customer.Application.Service
             return ObjectMapper.Map<Domain.Entity.Customer, CustomerDto>(result);
         }
 
+        public async Task<WalletDto> CreateWallet(long customerId, List<WalletDto> wallet)
+        {
+
+        }
+
         public async Task<List<CustomerDto>> GetListAsync()
         {
-            var customerList = await _customerRepository.GetListAsync();
+            try
+            {
+                var customerList = await _customerRepository.GetListAsync();
 
-            return ObjectMapper.Map<List<Domain.Entity.Customer>, List<CustomerDto>>(customerList);
+                return ObjectMapper.Map<List<Domain.Entity.Customer>, List<CustomerDto>>(customerList);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

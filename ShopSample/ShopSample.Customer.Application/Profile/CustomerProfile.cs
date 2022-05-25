@@ -13,6 +13,7 @@ namespace ShopSample.Customer.Application
         public CustomerProfile()
         {
             CreateMap<Domain.Entity.Customer, CustomerDto>().ReverseMap();
+            CreateMap<Domain.Entity.Wallet, WalletDto>().ReverseMap();
         }
     }
 }

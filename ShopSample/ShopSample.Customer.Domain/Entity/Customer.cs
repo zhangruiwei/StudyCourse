@@ -11,11 +11,11 @@ namespace ShopSample.Customer.Domain.Entity
 
         private List<Wallet> _wallet = new List<Wallet>();
 
-        public ReadOnlyCollection<Wallet> Wallet
+        public List<Wallet> Wallet
         {
             get
             {
-                return _wallet.AsReadOnly();
+                return _wallet;
             }
         }
 
