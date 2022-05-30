@@ -8,5 +8,6 @@ namespace ShopSample.Customer.Application.Contracts.IService
 
         Task<CustomerDto> CreateCustomer(CustomerDto dto);
         Task<List<CustomerDto>> GetListAsync();
+        Task<WalletDto> CreateWallet(long customerId, WalletDto wallet);
     }
 }

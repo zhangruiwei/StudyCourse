@@ -1,27 +1,45 @@
-﻿using System.Collections.ObjectModel;
+﻿using Volo.Abp;
 using Volo.Abp.Domain.Entities;
 
 namespace ShopSample.Customer.Domain.Entity
 {
     public class Customer : AggregateRoot<long>
     {
-        public string Name { get; set; }
+        public virtual string Name { get; protected set; }
 
-        public int Age { get; set; }
+        public virtual int Age { get; protected set; }
 
-        private List<Wallet> _wallet = new List<Wallet>();
+        public virtual List<Wallet> Wallet { get; protected set; }
 
-        public List<Wallet> Wallet
+        protected Customer()
         {
-            get
-            {
-                return _wallet;
-            }
+
         }
 
+        public Customer(long id, string name, int age)
+        {
+            Check.NotNull(name, nameof(name));
+
+            Id = id;
+            Name = name;
+            Age = age;
+            Wallet = new List<Wallet>();
+        }
+
+
         public void AddWallet(Wallet wallet)
-        { 
-            this._wallet.Add(wallet);
+        {
+            if (Wallet == null)
+            {
+                Wallet = new List<Wallet>();
+            }
+
+            Wallet.Add(wallet);
+        }
+
+        public void AddWallets(List<Wallet> wallets)
+        {
+            Wallet.AddRange(wallets);
         }
     }
 }
