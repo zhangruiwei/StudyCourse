@@ -24,6 +24,8 @@ namespace ShopSample.Customer.EntityFrameworkCore
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ConfigureCustomerStore();
+
+           base.OnModelCreating(modelBuilder);
         }
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShopSample.Customer.EntityFramework.Migration;
 using Volo.Abp.EntityFrameworkCore;
@@ -11,9 +12,10 @@ using Volo.Abp.EntityFrameworkCore;
 namespace ShopSample.Customer.EntityFramework.Migration.Migrations
 {
     [DbContext(typeof(CustomerDbMigratioinContext))]
-    partial class CustomerDbMigratioinContextModelSnapshot : ModelSnapshot
+    [Migration("20220608145733_add-multitenant")]
+    partial class addmultitenant
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

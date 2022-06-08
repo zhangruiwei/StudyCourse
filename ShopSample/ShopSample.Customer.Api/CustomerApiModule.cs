@@ -8,6 +8,7 @@ using Volo.Abp.Modularity;
 using Microsoft.OpenApi.Models;
 using ShopSample.Customer.EntityFrameworkCore;
 using ShopSample.Customer.Application.Service;
+using Volo.Abp.AspNetCore.MultiTenancy;
 
 namespace ShopSample.Customer.Api
 {
@@ -15,7 +16,8 @@ namespace ShopSample.Customer.Api
         typeof(AbpAspNetCoreMvcModule),
         typeof(CustomerApplicationModule),
         typeof(AbpAutofacModule),
-        typeof(CustomerEntityFrameworkCoreModule)
+        typeof(CustomerEntityFrameworkCoreModule),
+        typeof(AbpAspNetCoreMultiTenancyModule)
         )]
     public class CustomerApiModule : AbpModule
     {
@@ -33,6 +35,8 @@ namespace ShopSample.Customer.Api
             var app = context.GetApplicationBuilder();
             var env = context.GetEnvironment();
 
+
+            app.UseMultiTenancy();
 
             app.UseRouting();
             app.UseConfiguredEndpoints();

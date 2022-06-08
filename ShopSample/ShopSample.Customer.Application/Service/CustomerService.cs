@@ -22,6 +22,8 @@ namespace ShopSample.Customer.Application.Service
         {
             var entity = ObjectMapper.Map<CustomerDto, Domain.Entity.Customer>(dto);
 
+            
+
             var result = await _customerRepository.InsertAsync(entity);
 
             return ObjectMapper.Map<Domain.Entity.Customer, CustomerDto>(result);

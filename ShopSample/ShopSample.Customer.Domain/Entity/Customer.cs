@@ -1,15 +1,18 @@
 ﻿using Volo.Abp;
 using Volo.Abp.Domain.Entities;
+using Volo.Abp.MultiTenancy;
 
 namespace ShopSample.Customer.Domain.Entity
 {
-    public class Customer : AggregateRoot<long>
+    public class Customer : AggregateRoot<long>, IMultiTenant
     {
         public virtual string Name { get; protected set; }
 
         public virtual int Age { get; protected set; }
 
         public virtual List<Wallet> Wallet { get; protected set; }
+
+        public Guid? TenantId { get; set; }
 
         protected Customer()
         {
